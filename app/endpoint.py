@@ -5,9 +5,12 @@ from fastapi import APIRouter
 from pydantic import BaseModel
 from starlette.responses import Response
 
+#This is where we implement logic
 
 router = APIRouter()
 
+#FastAPI is built on Starlette for the ASGI and Pydantic for coding/typecasting
+#Pydantic enforces schema implementation via models (think reqs of an API's endpoint)
 
 class EventSchema(BaseModel):
     """Event Schema"""
